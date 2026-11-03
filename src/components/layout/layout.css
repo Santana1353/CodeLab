@@ -1,0 +1,14 @@
+/* Estilos del contenedor y del menú lateral */
+.app-shell{min-height:100vh;display:flex}
+.sidebar{width:280px;flex:0 0 280px;background:#101426;color:#c9cce0;padding:25px 16px;display:flex;flex-direction:column;height:100vh;position:sticky;top:0;overflow:auto;border-right:1px solid #252b43}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;padding:0 9px 28px}
+.brand-icon{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#8b5cf6,#22d3ee);display:grid;place-items:center;color:#fff}
+.brand strong{display:block;font-size:20px;letter-spacing:.2px}.brand small{display:block;font-size:9px;letter-spacing:1.7px;color:#858ba9;margin-top:3px}
+.home-link{display:flex;align-items:center;gap:10px;padding:11px 13px;border-radius:10px;text-decoration:none;color:#d9dcef;margin-bottom:20px}.home-link.active,.home-link:hover{background:#242b46;color:#fff}
+.side-caption,.nav-group-title{font-size:10px;letter-spacing:1.5px;color:#777f9e;font-weight:800;padding:8px 12px}
+.exercise-nav{overflow:auto;flex:1}.nav-group{margin-bottom:13px}.nav-group-title{letter-spacing:.6px;text-transform:none;font-size:11px}
+.nav-exercise{display:flex;align-items:center;gap:10px;padding:7px 12px;color:#aeb4ce;text-decoration:none;border-radius:8px;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav-exercise span{font-size:10px;color:#7782a7;font-weight:800;font-variant-numeric:tabular-nums}.nav-exercise:hover,.nav-exercise.active{background:#292f4e;color:#fff}.nav-exercise.active span{color:#a78bfa}
+.sidebar-footer{font-size:10px;color:#69718f;padding:16px 10px 0;border-top:1px solid #252b43}
+.main-area{min-width:0;flex:1;background:#f6f7fb}
+@media(max-width:850px){.app-shell{display:block}.sidebar{width:100%;height:auto;position:relative;padding:14px}.brand{padding-bottom:12px}.exercise-nav{display:flex;gap:14px;overflow-x:auto}.nav-group{min-width:max-content;margin:0}.nav-group-title{padding-left:4px}.nav-exercise{display:inline-flex}.side-caption,.sidebar-footer,.home-link{display:none}}
